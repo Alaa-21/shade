@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body class="font-karla overflow-x-hidden">
-    <div class="wrapper flex">
+    <div class="wrapper flex w-full">
         <header class="bg-offwhite w-full pb-28">
             
             <div class="navigation appear md:px-14 md:py-6 px-10 py-1 fixed left-0 right-0">
@@ -22,7 +22,7 @@
                             <li class="mr-10"><a href="#" class="hover:text-buttons transition-colors duration-500">Fetures</a></li>
                             <li class="mr-10"><a href="#" class="hover:text-buttons transition-colors duration-500">Supprot</a></li>
                         </ul>
-                        <div class="btn md:-ml-20">
+                        <div class="btn md:-ml-20 hidden sm:block">
                             <button class="md:mr-10 uppercase text-sm font-bold">Log in</button>
                             <button class="bg-buttons rounded uppercase p-2 text-white font-bold text-sm border-1 border-buttons hover:bg-buttonhover transition-colors duration-500 ml-5 md:ml-0">Download Now</button>
                         </div>
@@ -35,13 +35,13 @@
                 </div>
             </div>
             <div class="mid grid grid-cols-2 md:pt-28 md:px-2 pt-16 ml-6 md:ml-0">
-                <div class="col-span-full md:col-span-1 md:p-2 lg:p-14 md:mt-10 left-side">
-                    <h1 class="text-heading font-bold text-4xl lg:pl-8 lg:text-5xl w-full">
+                <div class="col-span-full md:col-span-1 md:p-2 lg:p-14 md:mt-10" id="left-side">
+                    <h1 class="text-heading font-bold text-4xl lg:pl-8 lg:text-4xl w-full">
                         Live chat support for your customers.
                     </h1>
                     <p class="mt-10 text-xl font-800 tracking-wide leading-8 text-texts">Create custom landing pages with Shades that convert more visitors than any website—no coding required.</p>
                     <input type="email" class="bg-searchbox px-8 py-4 mt-6 inline-block focus:outline-none" placeholder="Enter Your Email">
-                    <input type="submit" value="Get Started" class="ml-4 bg-buttons rounded-sm px-8 py-4 text-white  font-bold cursor-pointer hover:bg-buttonhover transition-colors duration-500">
+                    <input type="submit" value="Get Started" class="ml-4 bg-buttons rounded-sm px-8 py-4 text-white  font-bold cursor-pointer hover:bg-buttonhover transition-colors duration-500 mt-2 lg:mt-0">
                     <p class="text-paragraphs pt-6">
                         Already using Shade?
                         <a href="#" class="text-buttons">Sign in</a>
@@ -59,7 +59,7 @@
         <section class="bg-searchbox pb-16">
             <div class="cards-container w-full pt-32 md:px-10">
                 <div class="text-center mb-14">
-                    <h2 class="text-heading md:text-5xl text-4xl font-bold slide-up">Present your product features</h2>
+                    <h2 class="text-heading md:text-5xl text-4xl font-bold" id="slide-up">Present your product features</h2>
                 </div>
                 <div class="cards grid grid-cols-1 lg:grid-cols-3 p-8">
                     <div class="card">
@@ -146,15 +146,14 @@
     </div>
 
             <!----------------------- START SECTION THREE ------------------>
-
     <div class="wrapper">
         <section class="bg-third px-5 py-24 lg:p-32">
-            <div class="grid grid-cols-1 md:grid-cols-2">
-                <div class="ml-14 left-side col-span-full lg:col-span-1 min-w-full lg:w-6/12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:px-0">
+                <div id="left-side" class="lg:ml-14 col-span-full lg:col-span-1 min-w-full lg:w-6/12">
                     <img src="img/content-img1.svg" alt="" class="lg:w-9/12">
                 </div>
-                <div class="right-side col-span-full lg:col-span-1">
-                    <h2 class="mt-12 mb-4 font-bold text-3xl md:text-5xl text-heading">Response on a chat wherever you are</h2>
+                <div id="right-side" class="col-span-full lg:col-span-1">
+                    <h2 class="mt-12 mb-4 font-bold text-2xl md:text-5xl text-heading">Response on a chat wherever you are</h2>
                     <p class="text-texts text-xl md:text-2xl font-light w-full md:w-10/12 mt-10 mb-10">
                         Create custom landing pages with Shades that convert more visitors than any website, no coding required.
                     </p>
@@ -162,9 +161,9 @@
                 </div>
             </div>
             <!-- START NEW INE IN SECTION THREE -->
-            <div class="mt-1 lg:mt-64">
+            <div class="mt-1 lg:mt-64 lg:px-0">
                 <div class="grid grid-cols-1 md:grid-cols-2">
-                    <div class="right-side col-span-full lg:col-span-1">
+                    <div id="right-side" class="col-span-full lg:col-span-1">
                         <h2 class="mt-12 mb-4 font-bold text-3xl md:text-5xl text-heading">Never miss a thing</h2>
                         <p class="text-texts text-xl md:text-2xl font-light w-full md:w-11/12 mt-10 mb-10">
                             Event is not like most tech conferences. We want our presentations to engage the audience, spark discussion and inspire new ideas.
@@ -190,24 +189,25 @@
                                 </li>
                         </ul>
                     </div>
-                    <div class="ml-14 left-side col-span-full lg:col-span-1  min-w-9/12 lg:w-full mt-4 lg:mt-0">
-                        <img src="img/content-img2.png" alt="" class="w-9/12 lg:w-full center mt-10 lg:mt-0">
+                    <div id="left-side" class="lg:ml-14 col-span-full lg:col-span-1 w-full mt-4 lg:mt-0">
+                        <img src="img/content-img2.png" alt="" class="w-full center mt-10 lg:mt-0">
                     </div>
                 </div>
             </div>
         </section>
     </div>
+
                 <!------------------------ START SECTION FOUR ------------------>
     <div class="wrapper">
-        <section class="bg-fourth lg:py-32">
-            <div class="grid grid-cols-1 md:grid-cols-2 px-32 lg:px-14">
-                <div class="ml-14 left-side col-span-full lg:col-span-1 min-w-full lg:w-6/12">
+        <section class="bg-fourth lg:py-32 pt-5 lg:px-0">
+            <div class="grid grid-cols-1 md:grid-cols-2 pl-5 lg:px-14">
+                <div id="left-side" class="lg:ml-14 col-span-full lg:col-span-1 w-full flex justify-center lg:inline-block">
                     <img src="img/content-img3.svg" alt="" class="lg:w-9/12">
                 </div>
-                <div class="right-side col-span-full lg:col-span-1">
-                    <h2 class="mt-12 mb-4 font-bold text-3xl md:text-5xl text-heading">Increase Customer Support Productivity</h2>
-                    <p class="text-texts text-xl md:text-2xl font-light mt-10 mb-10 md:pr-32">Create custom landing pages with Shades that convert more visitors than any website, no coding required.</p>
-                    <p class="w-full md:w-7/12 leading-7 font-light text-texts">
+                <div id="right-side" class="col-span-full lg:col-span-1">
+                    <h2 class="mt-12 mb-4 font-bold text-2xl md:text-5xl text-heading">Increase Customer Support Productivity</h2>
+                    <p class="w-full text-texts text-xl md:text-2xl font-light mt-10 mb-10 md:pr-32">Create custom landing pages with Shades that convert more visitors than any website, no coding required.</p>
+                    <p class="w-full lg:w-7/12 leading-7 font-light text-texts">
                         Interested to see how it works? Schedule a free demo to get to learn everything you need to know.
                     </p>
                     <a href="#" class="mt-6 text-white bg-buttons rounded-lg px-10 py-3 hover:bg-buttonhover transition-colors duration-300 font-bold text-xl inline-block mb-14">Learn more</a>
@@ -218,7 +218,7 @@
                 <!------------------------ START SECTION FIVE ------------------->
     <div class="wrapper">
         <section class="bg-fifth p-4 lg:pt-10 lg:pl-10 lg:pr-10 lg:pb-32">
-            <div class="head text-center pt-28">
+            <div class="head text-center pt-28" id="slide-up">
                 <h1 class="text-white text-5xl">Pricing that suits you better</h1>
                 <p class="text-para w-full lg:w-8/12 mx-auto mt-8 leading-8 text-lg tracking-wide font-light">
                     We designed and tested prototypes that helped identify pain points in the account creation process. Together, we shaped the new standard.
@@ -234,112 +234,112 @@
             <div class="cards-container w-full pt-32 px-2">
                 <div class="cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     <!------------------------------------------- FIRST CARD ------------------------------>
-                    <div class="relative bg-white px-10 rounded-xl shadow-xl caghd my-6  md:mb-5 md:my-0 mx-2">
+                    <div id="right-side" class="relative bg-white px-3 md:px-10 rounded-lg md:rounded-xl shadow-2xl caghd my-6  md:mb-5 md:my-0 mx-2">
                         <span class="absolute top-6 block uppercase font-semibold">basic</span>
-                        <h3 class="font-bold-text-heading text-4xl mt-24 mb-9 inline-block" id="basic">
+                        <h3 class="font-bold-text-heading text-4xl  mt-14 sm:mt-24 mb-5 sm:mb-9 inline-block" id="basic">
                             &dollar;19
                         </h3>
                         <span class="text-lg font-bold" id="Month">/month</span>
-                        <p class="font-light text-black text-lg leading-7 w-full mb-6">
+                        <p class="font-light text-black text-lg md:leading-7 w-full mb-6">
                             Good for small business launching their products less then once a year
                         </p>
                         <ul>
-                            <li class="mt-6">
-                                <span class="text-black mr-3"><i class="fas fa-check"></i></span>
+                            <li class="sm:mt-6 mt-3">
+                                <span class="text-black mr-1 sm:mr-3"><i class="fas fa-check"></i></span>
                                 Unlimited Blocks
                             </li>
-                            <li class="mt-6">
-                                <span class="text-black mr-3"><i class="fas fa-check"></i></span>
+                            <li class="sm:mt-6 mt-3">
+                                <span class="text-black mr-1 sm:mr-3"><i class="fas fa-check"></i></span>
                                 5GB Clould Storages
                             </li>
-                            <li class="mt-6 line-through">
-                                <span class="text-unavilable mr-3"><i class="fas fa-check"></i></span>
+                            <li class="sm:mt-6 mt-3 line-through">
+                                <span class="text-unavilable mr-1 sm:mr-3"><i class="fas fa-check"></i></span>
                                 Custom Domain Names
                             </li>
-                            <li class="mt-6 mb-5 line-through">
-                                <span class="text-unavilable mr-3"><i class="fas fa-check"></i></span>
+                            <li class="sm:mt-6 sm:mb-5 mb-2 line-through mt-3">
+                                <span class="text-unavilable mr-1 sm:mr-3"><i class="fas fa-check"></i></span>
                                 Unlimited Emails
                             </li>
                         </ul>
-                        <a href="" class="text-white px-8 py-4 bg-buttons hover:bg-buttonhover text-xl rounded-xl flex justify-center mt-7">Start Free Trial</a>
+                        <a href="" class="text-white px-4 py-2 sm:px-8 sm:py-4 bg-buttons hover:bg-buttonhover text-xl rounded-xl flex justify-center mt-5 sm:mt-7">Start Free Trial</a>
                         <span class="block text-para font-light mt-3">No credit card required</span>
                     </div>
 <!----------------------------- SECONED CARD -------------------------------------------->
-                    <div class="relative bg-white px-10 rounded-xl shadow-xl caghd my-6  md:mb-5 md:my-0 mx-2 border-t-8 border-popular">
+                    <div id="slide-up" class="relative bg-white px-3 sm:px-10 roundded-lg sm:rounded-xl shadow-xl caghd my-6  md:mb-5 md:my-0 mx-2 border-t-8 border-popular">
                         <span class="absolute top-6 block uppercase font-semibold">PRO</span>
                         <span class="absolute right-3 px-2 py-1 rounded-3xl top-5 block text-sm text-white uppercase font-semibold bg-popular">Popular</span>
-                        <h3 class="font-bold-text-heading text-4xl mt-20 mb-9 inline-block" id="pro">
+                        <h3 class="font-bold-text-heading text-4xl mt-16 sm:mt-20 mb-5 sm:mb-9 inline-block" id="pro">
                             &dollar;29
                         </h3>
                         <span class="text-lg font-bold" id="Month2">/month</span>
-                        <p class="font-light text-black text-lg leading-7 w-full mb-6">
+                        <p class="font-light text-black text-lg md:leading-7 w-full mb-6">
                             Good for small business launching their products less then once a year
                         </p>
                         <ul>
-                            <li class="mt-6">
-                                <span class="text-black mr-3"><i class="fas fa-check"></i></span>
+                            <li class="sm:mt-6 mt-3">
+                                <span class="text-black mr-1 sm:mr-3"><i class="fas fa-check"></i></span>
                                 Unlimited Blocks
                             </li>
-                            <li class="mt-6">
-                                <span class="text-black mr-3"><i class="fas fa-check"></i></span>
+                            <li class="sm:mt-6 mt-3">
+                                <span class="text-black mr-1 sm:mr-3"><i class="fas fa-check"></i></span>
                                 5GB Clould Storages
                             </li>
-                            <li class="mt-6">
-                                <span class="text-black mr-3"><i class="fas fa-check"></i></span>
+                            <li class="sm:mt-6 mt-3">
+                                <span class="text-black mr-1 sm:mr-3"><i class="fas fa-check"></i></span>
                                 Custom Domain Names
                             </li>
-                            <li class="mt-6 mb-5 line-through">
-                                <span class="text-unavilable mr-3"><i class="fas fa-check"></i></span>
+                            <li class="sm:mt-6 mt-3 mb-5 line-through">
+                                <span class="text-unavilable mr-1 sm:mr-3"><i class="fas fa-check"></i></span>
                                 Unlimited Emails
                             </li>
                         </ul>
-                        <a href="" class="text-white px-8 py-4 bg-buttons hover:bg-buttonhover text-xl rounded-xl flex justify-center mt-7">Start Free Trial</a>
+                        <a href="" class="text-white py-2 px-4 sm:px-8 sm:py-4 bg-buttons hover:bg-buttonhover text-xl rounded-xl flex justify-center mt-7">Start Free Trial</a>
                         <span class="block text-para font-light mt-3">No credit card required</span>
                     </div>
 <!------------------------------------THIRD CARD ----------------------------------------->
-                    <div class="relative bg-white px-10 rounded-xl shadow-xl caghd mx-2">
-                        <span class="absolute top-6 block uppercase font-semibold">Pro</span>
-                        <h3 class="font-extrabold-text-heading text-4xl mt-24 mb-9 inline-block" id="pro-2">
-                            &dollar;49
+                    <div id="right-side" class="relative bg-white px-3 md:px-10 rounded-lg md:rounded-xl shadow-2xl caghd my-6  md:mb-5 md:my-0 mx-2">
+                        <span class="absolute top-6 block uppercase font-semibold">basic</span>
+                        <h3 class="font-bold-text-heading text-4xl  mt-14 sm:mt-24 mb-5 sm:mb-9 inline-block" id="pro-2">
+                            &dollar;19
                         </h3>
                         <span class="text-lg font-bold" id="Month3">/month</span>
-                        <p class="font-light text-black text-lg leading-7 w-full mb-6">
+                        <p class="font-light text-black text-lg md:leading-7 w-full mb-6">
                             Good for small business launching their products less then once a year
                         </p>
                         <ul>
-                            <li class="mt-6">
-                                <span class="text-black mr-3"><i class="fas fa-check"></i></span>
+                            <li class="sm:mt-6 mt-3">
+                                <span class="text-black mr-1 sm:mr-3"><i class="fas fa-check"></i></span>
                                 Unlimited Blocks
                             </li>
-                            <li class="mt-6">
-                                <span class="text-black mr-3"><i class="fas fa-check"></i></span>
+                            <li class="sm:mt-6 mt-3">
+                                <span class="text-black mr-1 sm:mr-3"><i class="fas fa-check"></i></span>
                                 5GB Clould Storages
                             </li>
-                            <li class="mt-6">
-                                <span class="text-black mr-3"><i class="fas fa-check"></i></span>
+                            <li class="sm:mt-6 mt-3">
+                                <span class="text-black mr-1 sm:mr-3"><i class="fas fa-check"></i></span>
                                 Custom Domain Names
                             </li>
-                            <li class="mt-6 mb-5">
-                                <span class="text-black mr-3"><i class="fas fa-check"></i></span>
+                            <li class="sm:mt-6 sm:mb-5 mb-2 mt-3">
+                                <span class="text-black mr-1 sm:mr-3"><i class="fas fa-check"></i></span>
                                 Unlimited Emails
                             </li>
                         </ul>
-                        <a href="" class="text-white px-8 py-4 bg-buttons hover:bg-buttonhover text-xl rounded-xl flex justify-center mt-7">Start Free Trial</a>
+                        <a href="" class="text-white px-4 py-2 sm:px-8 sm:py-4 bg-buttons hover:bg-buttonhover text-xl rounded-xl flex justify-center mt-5 sm:mt-7">Start Free Trial</a>
                         <span class="block text-para font-light mt-3">No credit card required</span>
                     </div>
             </div>
-            <div class="w-100 flex justify-center mt-5">
+            <div class="w-100 flex justify-center mt-5 text-center">
                 <p class="text-para">
-                    Still Confused? <a href="#" class="text-white"> Check our full feature list</a>
+                    Still Confused? <a href="#" class="text-white block sm:inline-block"> Check our full feature list</a>
                 </p>
             </div>
         </section>
     </div>
                 <!--------------------START FOOTER ---------------------------- -->
     <div class="wrapper">
-        <section class="bg-third py-96">
+        <section class="bg-third py-16">
             <div class="text flex justify-center text-center">
-                <div>
+                <div id="slide-bottom">
                     <h1 class="text-4xl font-bold">
                         Join our rich newsletter
                         </h1>
@@ -348,7 +348,7 @@
                         </p>
                 </div>
             </div>
-            <div>
+            <div id="slide-up">
                 <div class="w-full flex">
                     <div class="mx-auto">
                         <input type="email" class="bg-searchbox px-8 py-4 mt-6 my-3 focus:outline-none block sm:inline-block" placeholder="Enter Your Email">
@@ -366,14 +366,14 @@
             <hr class="w-10/12 my-32">
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2">
-                <div class="sm:px-4 pb-10 lg:px-28 px-8">
+                <div class="sm:px-4 pb-10 lg:px-28 px-8" id="left-side">
                     <img src="img/logo-paste.png" alt="">
                     <p class="w-8/12 my-8 text-para ">Big, small, online, offline, local. Size doesn't matter. We work on diverse projects for top brands as well as for cool startups.</p>
                     <a href="#"><i class="fab fa-facebook-f text-gray-700 hover:text-buttons transition-colors duration-300 text-sm"></i></a>
                     <a href="#"><i class="fab fa-twitter mx-4 text-gray-700 hover:text-buttons transition-colors duration-300 text-sm"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in text-gray-700 hover:text-buttons transition-colors duration-300 text-sm"></i></a>
                 </div>
-                <div class="grid sm:grid-cols-3 grid-cols-2 px-6">
+                <div class="grid sm:grid-cols-3 grid-cols-2 px-6" id="right-side">
                     <div>
                         <p class="text-para">Help Menu</p>
                         <ul>
@@ -403,5 +403,6 @@
         </section>
     </div>
     <script src="app.js"></script>
+    <script src="animation.js"></script>
 </body>
 </html>
